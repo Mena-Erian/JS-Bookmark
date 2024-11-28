@@ -1,0 +1,79 @@
+:root {
+    --bg-body-color: #f7ecde;
+    --bg-selector-color: rgb(254, 194, 96);
+    --bg-selector-colo-op-25: rgba(254, 194, 96, 0.25);
+    --text-main-color: rgb(33, 37, 41);
+}
+::selection {
+    background-color: var(--bg-selector-color);
+}
+body {
+    background-color: var(--bg-body-color);
+    background-image: url("../images/bg-body.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    font-family: Pacifico !important;
+    color: #a6e117 !important;
+    background-image: linear-gradient(to top, #13181d 40%, transparent 40%);
+    background-size: 100% 100%;
+    background-position: bottom;
+    transition: all 0.5s;
+}
+h1:hover {
+    background-size: 100% 175%;
+}
+h2 {
+    font-family: Righteous !important;
+}
+h1,
+h2,
+h3,
+p,
+span,
+button {
+    color: var(--text-main-color);
+    font-family: PT_Sans_Caption;
+}
+
+form > * {
+    display: block;
+    text-align: start;
+}
+form button {
+    text-align: center;
+}
+.form-control:focus {
+    border-color: var(--bg-selector-color) !important;
+    box-shadow: 0 0 0 0.25rem var(--bg-selector-colo-op-25);
+}
+.h2gr {
+    color: transparent !important;
+    background-image: linear-gradient(70deg, #00ff48de 40%, #ffea00f1 60%);
+    background-clip: text;
+}
+.table {
+    --bs-table-bg: rgba(255, 255, 255, 0.85);
+    --bs-table-border-color: black;
+    --bs-table-hover-bg: white;
+    box-shadow: 0 0rem 4rem rgba(0, 255, 64, 0.5) !important ;
+}
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+/* fonts */
+@font-face {
+    font-family: Pacifico;
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: Righteous;
+    src: url(../fonts/Righteous/Righteous-Regular.ttf);
+}
+@font-face {
+    font-family: PT_Sans_Caption;
+    src: url(../fonts/PT_Sans_Caption/PTSansCaption-Regular.ttf);
+}
